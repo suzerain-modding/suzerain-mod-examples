@@ -31,14 +31,14 @@ public static class SpendBudgetDecision
         // The description of the decision when viewed under the assigned token.
         hubDescription: "Should we spend budget?");
 
-    public static void Init()
+    internal static void Init()
     {
         // Suzerain Modding Kit needs to know that our variables exist.
         Variables.Register(SpendBudgetOptionVar);
         Variables.Register(NothingOptionVar);
     }
 
-    public static void OnEvaluateStep()
+    internal static void OnEvaluateStep()
     {
         // If we're not in Sordland on turn 1 step 2, return.
         if (!GameState.IsCurrentStoryPack(SuzerainStoryPackInfo.Sordland) ||
@@ -67,7 +67,7 @@ public static class SpendBudgetDecision
         _ = GameState.AddCustomStoryFragment(Data);
     }
 
-    public static void OnDecisionShow()
+    internal static void OnDecisionShow()
     {
         // If the current decision name does not match our decision name, return.
         if (!Data.Name.Equals(DecisionManager.CurrentDecisionName, StringComparison.Ordinal))
@@ -85,7 +85,7 @@ public static class SpendBudgetDecision
         DecisionManager.AddOption(NothingOptionText);
     }
 
-    public static void OnDecisionFinished(DecisionOptionInfo selectedOption)
+    internal static void OnDecisionFinished(DecisionOptionInfo selectedOption)
     {
         // If the decision name of the selected option does not match our decision name, return.
         if (!Data.Name.Equals(selectedOption.DecisionName, StringComparison.Ordinal))
