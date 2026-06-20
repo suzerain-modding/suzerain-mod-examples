@@ -11,7 +11,7 @@ public static class SpendBudgetBill
     public const string SignedVar = "BillExample.SpendBudgetBill_Signed";
 
     // The properties for this bill.
-    public static readonly CustomBillData Data = new(
+    public static readonly CustomBillFragment Data = new(
         // The unique name of the bill.
         name: "BillExample.MyBill",
         // The story pack that this bill will be displayed in.
