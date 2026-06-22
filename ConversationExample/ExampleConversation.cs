@@ -116,7 +116,9 @@ public static class ExampleConversation
             return;
         }
 
-        // Add the story fragment to the game. We don't care about the return value, discard it.
+        // Add the conversation to the game. Discard the return value.
+        _ = GameState.AddCustomConversation(Fragment.ConversationName);
+        // Add the story fragment to the game. Discard the return value.
         _ = GameState.AddCustomStoryFragment(Fragment);
     }
 }
