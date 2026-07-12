@@ -2,8 +2,8 @@
 using SuzerainModdingKit.Character;
 using SuzerainModdingKit.StoryFragments.Conversation;
 using SuzerainModdingKit.StoryFragments.Conversation.NodeSelectors;
-using SuzerainModdingKit.StoryPack;
 using SuzerainModdingKit.Utils;
+using SuzerainModdingKit.VanillaData;
 
 namespace ConversationExample;
 

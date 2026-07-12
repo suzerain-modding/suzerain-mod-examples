@@ -1,6 +1,6 @@
 ﻿using SuzerainModdingKit;
 using SuzerainModdingKit.StoryFragments.Decision;
-using SuzerainModdingKit.StoryPack;
+using SuzerainModdingKit.VanillaData;
 
 namespace DecisionExample;
 

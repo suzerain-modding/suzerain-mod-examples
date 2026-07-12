@@ -1,6 +1,6 @@
 ﻿using SuzerainModdingKit;
 using SuzerainModdingKit.StoryFragments.Bill;
-using SuzerainModdingKit.StoryPack;
+using SuzerainModdingKit.VanillaData;
 
 namespace BillExample;
 
