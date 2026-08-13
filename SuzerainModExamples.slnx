@@ -3,10 +3,13 @@
     <Platform Name="Any CPU" />
     <Platform Name="x64" />
   </Configurations>
-  <Project Path="DecisionExample/DecisionExample.csproj">
+  <Project Path="BillExample/BillExample.csproj">
     <Platform Solution="*|x64" Project="x64" />
   </Project>
-  <Project Path="BillExample/BillExample.csproj">
+  <Project Path="ConversationExample/ConversationExample.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+  </Project>
+  <Project Path="DecisionExample/DecisionExample.csproj">
     <Platform Solution="*|x64" Project="x64" />
   </Project>
 </Solution>

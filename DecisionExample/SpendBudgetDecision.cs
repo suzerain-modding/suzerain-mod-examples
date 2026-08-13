@@ -1,6 +1,6 @@
 ﻿using SuzerainModdingKit;
 using SuzerainModdingKit.StoryFragments.Decision;
-using SuzerainModdingKit.StoryPack;
+using SuzerainModdingKit.VanillaData;
 
 namespace DecisionExample;
 
@@ -15,7 +15,7 @@ public static class SpendBudgetDecision
     public const string NothingOptionVar = "DecisionExample.SpendBudgetDecision_Nothing";
 
     // The properties for this decision.
-    public static readonly CustomDecisionData Data = new(
+    public static readonly CustomDecisionFragment Data = new(
         // The unique name of the decision.
         name: "DecisionExample.MyDecision",
         // The story pack that this decision will be displayed in.
